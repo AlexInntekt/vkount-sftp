@@ -57,11 +57,12 @@ url = "https://cloud.v-count.com/api/v4/sales"
 payload = {'username':'ROMDemo',
 		'password':'ROMDemo1007',
 		'date':'2019-10-07',
+		'sales':'111',
 		'store':'RAV_DEMO',
 		'transaction':'77',
 		'checkouts':'9',
-		'units':'33',
-		'sales':'200'}
+		'units':'33'
+		}
 
 response = requests.post(url, data=payload)
 
