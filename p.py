@@ -57,7 +57,7 @@ url = "https://cloud.v-count.com/api/v4/sales"
 payload = {'username':'ROMDemo',
 		'password':'ROMDemo1007',
 		'date':'2019-10-07',
-		'sales':'111',
+		'sales':'222',
 		'store':'RAV_DEMO',
 		'transaction':'77',
 		'checkouts':'9',
