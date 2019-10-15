@@ -1,0 +1,21 @@
+{
+	"username":"ROMDemo",
+	"password":"ROMDemo1007",
+	"date":"2019-10-10",
+	"store":"RAV_DEMO",
+	"sales:":"250",
+	"transaction":"500",
+	"checkouts":"10",
+	"units":"330"
+}
+
+
+
+{
+	"username":"ROMDemo",
+	"password":"ROMDemo1007",
+	"start_date":"2019-10-01",
+	"finish_date":"2019-10-15",
+	"format":"json",
+	"store":"all"
+}

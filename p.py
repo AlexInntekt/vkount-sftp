@@ -46,20 +46,36 @@
 # print (response.status)
 
 
+
+
+#___________________________________________-
+
 import requests
 import json
 
 url = "https://cloud.v-count.com/api/v4/sales"
 payload = {'username':'ROMDemo',
 		'password':'ROMDemo1007',
-		'date':'2019-10-10',
+		'date':'2019-10-07',
 		'store':'RAV_DEMO',
-		'sales:':'200',
-		'transaction':'500',
-		'checkouts':'200',
-		'units':'330'}
+		'transaction':'77',
+		'checkouts':'9',
+		'units':'33',
+		'sales':'200'}
 
-headers = {'content-type': 'application/json'}
-response = requests.post(url, data=json.dumps(payload), headers=headers)
+response = requests.post(url, data=payload)
 
-print(response)
+print(response.text)
+
+
+# import requests
+# import json
+
+# url = "https://cloud.v-count.com/api/v4/clientstores"
+# payload = {'username':'ROMDemo',
+# 		'password':'ROMDemo1007',
+# 		'format':'json'}
+
+# response = requests.post(url, data=payload)
+
+# print(response.json())
