@@ -53,30 +53,27 @@
 import requests
 import json
 
-url = "https://cloud.v-count.com/api/v4/sales"
-payload = {'username':'ROMDemo',
-		'password':'ROMDemo1007',
-		'date':'2019-10-07',
-		'sales':'123',
-		'store':'RAV_DEMO',
-		'transaction':'77',
-		'checkouts':'9',
-		'units':'33'
-		}
-
-response = requests.post(url, data=payload)
-
-print(response.text)
-
-
-# import requests
-# import json
-
-# url = "https://cloud.v-count.com/api/v4/clientstores"
+# url = "https://cloud.v-count.com/api/v4/sales"
 # payload = {'username':'ROMDemo',
 # 		'password':'ROMDemo1007',
-# 		'format':'json'}
+# 		'date':'2019-10-07',
+# 		'sales':'123',
+# 		'store':'RAV_DEMO',
+# 		'transaction':'77',
+# 		'checkouts':'9',
+# 		'units':'33'
+# 		}
 
 # response = requests.post(url, data=payload)
 
-# print(response.json())
+
+url = "https://cloud.v-count.com/api/v4/clientstores"
+payload = {'username':'ROMDemo',
+		'password':'ROMDemo1007',
+		'format':'json'}
+
+response = requests.post(url, data=payload)
+
+
+print(response.json())
+print(response.text)

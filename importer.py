@@ -17,7 +17,7 @@ with open('data_pack.csv', newline='') as File:
         'store':'RAV_DEMO',
         'transaction':row['transaction'],
         'checkouts':'1',
-        'units':'33'
+        'units': row['units']
         }
 
         response = requests.post(url, data=payload)
