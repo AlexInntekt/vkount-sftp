@@ -3,7 +3,7 @@ import json
 import csv
 import sys
 from datetime import date
-
+import time
 
 
 def return_current_day():
@@ -16,8 +16,8 @@ def run():
 	payload = {'username':'ROMDemo',
 			'password':'ROMDemo1007',
 			'format':'json',
-			'start_date':'2019-10-02',
-			'finish_date':'2019-10-15',
+			'start_date':'2019-10-04',
+			'finish_date':'2019-10-04',
 			'store':'RAV_DEMO'}
 
 	response = requests.post(url, data=payload)
@@ -35,7 +35,10 @@ def run():
 	    output.writerow(row.values())
 
 
-	# print(json.dumps(json_resp, sort_keys=True, indent=4))
-	# print(response.text)
+def manager():
+	while True:
+		return_current_day()
+		run()
+		time.sleep(60 * 60)
 
-return_current_day()
+manager()
